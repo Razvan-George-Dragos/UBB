@@ -1,0 +1,22 @@
+D:\CURSURI FACULTATE\AN 2 SEM 2\SGBD\HomeWork1\bin\Debug\HomeWork1.exe.config
+D:\CURSURI FACULTATE\AN 2 SEM 2\SGBD\HomeWork1\bin\Debug\HomeWork1.exe
+D:\CURSURI FACULTATE\AN 2 SEM 2\SGBD\HomeWork1\bin\Debug\HomeWork1.pdb
+D:\CURSURI FACULTATE\AN 2 SEM 2\SGBD\HomeWork1\obj\Debug\HomeWork1.csproj.AssemblyReference.cache
+D:\CURSURI FACULTATE\AN 2 SEM 2\SGBD\HomeWork1\obj\Debug\HomeWork1.csproj.SuggestedBindingRedirects.cache
+D:\CURSURI FACULTATE\AN 2 SEM 2\SGBD\HomeWork1\obj\Debug\HomeWork1.Form1.resources
+D:\CURSURI FACULTATE\AN 2 SEM 2\SGBD\HomeWork1\obj\Debug\HomeWork1.Properties.Resources.resources
+D:\CURSURI FACULTATE\AN 2 SEM 2\SGBD\HomeWork1\obj\Debug\HomeWork1.csproj.GenerateResource.cache
+D:\CURSURI FACULTATE\AN 2 SEM 2\SGBD\HomeWork1\obj\Debug\HomeWork1.csproj.CoreCompileInputs.cache
+D:\CURSURI FACULTATE\AN 2 SEM 2\SGBD\HomeWork1\obj\Debug\HomeWork1.exe
+D:\CURSURI FACULTATE\AN 2 SEM 2\SGBD\HomeWork1\obj\Debug\HomeWork1.pdb
+D:\SEM2\Baze de date\lab2\bin\Debug\HomeWork1.exe.config
+D:\SEM2\Baze de date\lab2\bin\Debug\HomeWork1.exe
+D:\SEM2\Baze de date\lab2\bin\Debug\HomeWork1.pdb
+D:\SEM2\Baze de date\lab2\obj\Debug\HomeWork1.csproj.AssemblyReference.cache
+D:\SEM2\Baze de date\lab2\obj\Debug\HomeWork1.csproj.SuggestedBindingRedirects.cache
+D:\SEM2\Baze de date\lab2\obj\Debug\HomeWork1.Form1.resources
+D:\SEM2\Baze de date\lab2\obj\Debug\HomeWork1.Properties.Resources.resources
+D:\SEM2\Baze de date\lab2\obj\Debug\HomeWork1.csproj.GenerateResource.cache
+D:\SEM2\Baze de date\lab2\obj\Debug\HomeWork1.csproj.CoreCompileInputs.cache
+D:\SEM2\Baze de date\lab2\obj\Debug\HomeWork1.exe
+D:\SEM2\Baze de date\lab2\obj\Debug\HomeWork1.pdb
