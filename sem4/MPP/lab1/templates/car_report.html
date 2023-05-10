@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Car Rims Report</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Car</th>
+        <th>Model</th>
+        <th>Number of Rims</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for car in cars %}
+        <tr>
+          <td>{{ car.brand }}</td>
+          <td>{{ car.mod }}</td>
+          <td>{{ car.num_cars }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

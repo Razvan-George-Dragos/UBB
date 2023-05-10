@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Car Owner Report</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Owner</th>
+        <th>Number of Cars</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for owner in owners %}
+        <tr>
+          <td>{{ owner.name }}</td>
+          <td>{{ owner.num_cars }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
