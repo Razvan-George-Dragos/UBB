@@ -9,10 +9,11 @@ import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import axios from "axios";
 import { DEV_BACKEND_API_URL } from "../../constants"
-
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export const CarAdd = () => {
 	const navigate = useNavigate();
-
+	//const [errorMessage, setErrorMessage] = useState("");
 	const [car, setCar] = useState({
 		brand: "",
         mod:"",
@@ -24,9 +25,14 @@ export const CarAdd = () => {
 	const addCar = async (event: { preventDefault: () => void }) => {
 		event.preventDefault();
 		try {
+			if(car.yearOfRegistration<1875 || car.yearOfRegistration>2023 || car.hp<2 || car.hp>3000){
+				throw new Error("Invalid dates for yearOfReagistration or horse power");
+			}
 			await axios.post(`${DEV_BACKEND_API_URL}/cars/`, car);
 			navigate("/cars");
 		} catch (error) {
+			toast.error((error as { message: string }).message);
+			//setErrorMessage((error as { message: string }).message);
 			console.log(error);
 		}
 	};
@@ -79,6 +85,7 @@ export const CarAdd = () => {
 							sx={{ mb: 2 }}
 							onChange={(event: React.ChangeEvent<HTMLInputElement>) => setCar({ ...car, yearOfRegistration: Number(event.target.value) })}
 						/>
+						<ToastContainer/> 
 						<Button type="submit">Add Car</Button>
 					</form>
 				</CardContent>

@@ -12,21 +12,21 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import axios from "axios";
-import { Car } from "../../models/Cars";
+import { Owners } from "../../models/Owners";
 import { DEV_BACKEND_API_URL } from "../../constants"
 
-export const CarUpdate = () => {
+export const OwnerUpdate = () => {
     const navigate = useNavigate();
     const { carId } = useParams();
   
     const [loading, setLoading] = useState(true);
-    const [car, setCar] = useState<Car | null>(null);
+    const [car, setCar] = useState<Owners | null>(null);
   
     useEffect(() => {
       const fetchCar = async () => {
         try {
-          const response = await axios.get<Car>(
-            `${DEV_BACKEND_API_URL}/cars/${carId}`
+          const response = await axios.get<Owners>(
+            `${DEV_BACKEND_API_URL}/owners/${carId}`
           );
           setCar(response.data);
         } catch (error) {
@@ -41,8 +41,8 @@ export const CarUpdate = () => {
     const updateCar = async (event: { preventDefault: () => void }) => {
       event.preventDefault();
       try {
-        await axios.put(`${DEV_BACKEND_API_URL}/cars/${carId}`, car);
-        navigate(`/cars/`);
+        await axios.put(`${DEV_BACKEND_API_URL}/owners/?id=${carId}`, car);
+        navigate(`/owners/`);
       } catch (error) {
         console.log(error);
       }
@@ -67,65 +67,44 @@ export const CarUpdate = () => {
               </IconButton>{" "}
               <form onSubmit={updateCar}>
                 <TextField
-                  value={car.brand}
-                  id="brand"
-                  label="Car brand"
+                  value={car.name}
+                  id="name"
+                  label="Name"
                   variant="outlined"
                   fullWidth
                   sx={{ mb: 2 }}
                   onChange={(event) =>
-                    setCar({ ...car, brand: event.target.value })
+                    setCar({ ...car, name: event.target.value })
                   }
                 />
                 <TextField
-                  value={car.mod}
-                  id="mod"
-                  label="Model"
+                  value={car.addres}
+                  id="addres"
+                  label="Address"
                   variant="outlined"
                   fullWidth
                   sx={{ mb: 2 }}
                   onChange={(event) =>
-                    setCar({ ...car, mod: event.target.value })
+                    setCar({ ...car, addres: event.target.value })
                   }
                 />
   
                 <TextField
-                  value={car.chasisNr}
-                  id="chasisNr"
-                  label="Chasis nr"
+                  value={car.cnp}
+                  id="cnp"
+                  label="CNP"
                   variant="outlined"
                   fullWidth
                   sx={{ mb: 2 }}
                   onChange={(event) =>
-                    setCar({ ...car, chasisNr: Number(event.target.value) })
+                    setCar({ ...car, cnp: event.target.value })
                   }
                 />
   
-                <TextField
-                  value={car.hp}
-                  id="hp"
-                  label="Horse Power"
-                  variant="outlined"
-                  fullWidth
-                  sx={{ mb: 2 }}
-                  onChange={(event) =>
-                    setCar({ ...car, hp: Number(event.target.value) })
-                  }
-                />
-                <TextField
-                  value={car.yearOfRegistration}
-                  id="yearOfRegistration"
-                  label="Year of registration"
-                  variant="outlined"
-                  fullWidth
-                  sx={{ mb: 2 }}
-                  onChange={(event) =>
-                    setCar({ ...car, yearOfRegistration: Number(event.target.value) })
-                  }
-                />
+                
                 
   
-                <Button type="submit">Update Car</Button>
+                <Button type="submit">Update Owner</Button>
               </form>
             </CardContent>
             <CardActions></CardActions>

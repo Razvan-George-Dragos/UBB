@@ -15,14 +15,14 @@ import axios from "axios";
 import { styled } from '@mui/material/styles';
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react"
-import { Car } from "../../models/Cars";
+import { Owners } from "../../models/Owners";
 import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import AddIcon from "@mui/icons-material/Add"
 import { DEV_BACKEND_API_URL } from "../../constants"
 import { Paginator } from "../pagination/Pagination";
-import { CarWRims } from "../../models/CarsWRims";
+
 
 const StyledTableRow = styled(TableRow)`
   &:hover {
@@ -30,9 +30,9 @@ const StyledTableRow = styled(TableRow)`
   }
 `;
 
-export const CarsShowAll = () => {
+export const OwnersShowAll = () => {
     const[loading, setLoading] = useState(true)
-    const [cars, setCars] = useState<CarWRims[]>([]);
+    const [cars, setCars] = useState<Owners[]>([]);
 	const [page, setPage] = useState(1);
     const [pageSize, setPageSize] = useState(10);
     const [totalRows, setTotalRows] = useState(0);
@@ -60,7 +60,7 @@ export const CarsShowAll = () => {
 	}
 
 	const fetchCars = async () => {
-		fetch(`${DEV_BACKEND_API_URL}/cars/${page}`)
+		fetch(`${DEV_BACKEND_API_URL}/owners/${page}`)
       		.then(res => res.json())
       		.then(data => {setCars(data.data); setTotalRows(data.totalRows); setLoading(false);})
       		.catch(error => {
@@ -75,13 +75,13 @@ export const CarsShowAll = () => {
     }, [page]);
     return (
       <Container>
-			<h1>All cars</h1>
+			<h1>All Owners</h1>
 
 			{loading && <CircularProgress />}
 			{!loading && cars.length === 0 && <p>No cars found</p>}
 			{!loading && (
-				<IconButton component={Link} sx={{ mr: 3 }} to={`/cars/add`}>
-					<Tooltip title="Add a new car" arrow>
+				<IconButton component={Link} sx={{ mr: 3 }} to={`/owners/add`}>
+					<Tooltip title="Add a new owner" arrow>
 						<AddIcon color="primary" />
 					</Tooltip>
 				</IconButton>
@@ -92,12 +92,10 @@ export const CarsShowAll = () => {
 						<TableHead>
 							<TableRow>
 								<TableCell>#</TableCell>
-								<TableCell align="right">Car Brand</TableCell>
-								<TableCell align="right">Model</TableCell>
-								<TableCell align="right">Chasis nr</TableCell>
-								<TableCell align="right">Horse Power</TableCell>
-								<TableCell align="right">Year of registration</TableCell>
-								<TableCell align="right">Number Of rims</TableCell>
+								<TableCell align="right">Name</TableCell>
+								<TableCell align="right">Address</TableCell>
+								<TableCell align="right">CNP</TableCell>
+
 								<TableCell align="center">Operations</TableCell>
 							</TableRow>
 						</TableHead>
@@ -107,34 +105,33 @@ export const CarsShowAll = () => {
 									<TableCell component="th" scope="row">
 										{index + 1}
 									</TableCell>
-									<TableCell align="right">{car.brand}</TableCell>
-									<TableCell align="right">{car.mod}</TableCell>
+									<TableCell align="right">{car.name}</TableCell>
+									<TableCell align="right">{car.addres}</TableCell>
 									<TableCell component="th" scope="row">
-										<Link to={`/cars/${car.id}/details`} title="View car details">
-											{car.chasisNr}
+										<Link to={`/owners/${car.id}/details`} title="View car details">
+											{car.cnp}
 										</Link>
 									</TableCell>
-									<TableCell align="right">{car.hp}</TableCell>
-									<TableCell align="right">{car.yearOfRegistration}</TableCell>
-									<TableCell align="right">{car.num_rims}</TableCell>
+
+
 									<TableCell align="right">
 
 										<IconButton
 											component={Link}
 											sx={{ mr: 3 }}
-											to={`/cars/${car.id}/details`}>
-											<Tooltip title="View car details" arrow>
+											to={`/owners/${car.id}/details`}>
+											<Tooltip title="View owner details" arrow>
 												<ReadMoreIcon color="primary" />
 											</Tooltip>
 										</IconButton>
 
-										<IconButton component={Link} sx={{ mr: 3 }} to={`/cars/${car.id}/edit`}>
+										<IconButton component={Link} sx={{ mr: 3 }} to={`/owners/${car.id}/edit`}>
 											<Tooltip title="Edit car details" arrow>
 												<EditIcon />
 											</Tooltip>
 										</IconButton>
 
-										<IconButton component={Link} sx={{ mr: 3 }} to={`/cars/${car.id}/delete`}>
+										<IconButton component={Link} sx={{ mr: 3 }} to={`/owners/${car.id}/delete`}>
 											<Tooltip title="Delete car" arrow>
 												<DeleteForeverIcon sx={{ color: "red" }} />
 											</Tooltip>
@@ -157,4 +154,3 @@ export const CarsShowAll = () => {
 		</Container>
     )
   }
-  

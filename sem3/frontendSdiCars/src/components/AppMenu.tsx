@@ -57,6 +57,54 @@ import {
 
                 Car Owner - Statistic
               </Button>
+
+              <Button
+                variant={path.startsWith("/rims") ? "outlined" : "text"}
+                to="/rims"
+                component={Link}
+                color="inherit"
+                sx={{ mr: 5 }}
+                //startIcon={<PersonIcon></PersonIcon>}
+              >
+                
+     
+                Rims
+              </Button>
+              <Button
+                variant={path.startsWith("/owners") ? "outlined" : "text"}
+                to="/owners"
+                component={Link}
+                color="inherit"
+                sx={{ mr: 5 }}
+                //startIcon={<PersonIcon></PersonIcon>}
+              >
+                
+     
+                Owners
+              </Button>
+              <Button
+                variant={path.startsWith("/ownerscars") ? "outlined" : "text"}
+                to="/ownerscars"
+                component={Link}
+                color="inherit"
+                sx={{ mr: 5 }}
+                //startIcon={<PersonIcon></PersonIcon>}
+              >
+                
+     
+                OwnersCars
+              </Button>
+              <Button
+                variant={path.startsWith("/car_rims_report") ? "outlined" : "text"}
+                to="/car_rims_report"
+                component={Link}
+                color="inherit"
+                sx={{ mr: 5 }}
+                startIcon={<PieChartIcon></PieChartIcon>}
+              >
+
+                Car Rims - Statistic
+              </Button>
             </Toolbar>
           </AppBar>
         </Box>
