@@ -1,0 +1,5 @@
+C:/Users/Razvan/Desktop/facultate/oop/pt restanta 1/cmake-build-debug/CMakeFiles/pt_restanta_1.dir
+C:/Users/Razvan/Desktop/facultate/oop/pt restanta 1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Razvan/Desktop/facultate/oop/pt restanta 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Razvan/Desktop/facultate/oop/pt restanta 1/cmake-build-debug/CMakeFiles/pt_restanta_1_autogen_timestamp_deps.dir
+C:/Users/Razvan/Desktop/facultate/oop/pt restanta 1/cmake-build-debug/CMakeFiles/pt_restanta_1_autogen.dir

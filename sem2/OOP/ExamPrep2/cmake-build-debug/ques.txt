@@ -1,0 +1,7 @@
+1,cerinta,raspuns,100
+7,asd,dsa,50
+0,ultima,uau,15
+3,asd,qwe,15
+5,intrebare,raspunsul,15
+10,enunt,ras,15
+2,prima,raspuns1,10
