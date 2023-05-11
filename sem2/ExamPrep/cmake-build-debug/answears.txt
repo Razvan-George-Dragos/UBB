@@ -1,8 +1,0 @@
-5,3,gafdsg,andrei,0
-6,3,haha,razvan,0
-7,2,lalala,andrei,0
-8,4,lala,giany,0
-3,1,nene,turbut,1
-7,1,gfads,eu,2
-6,2,schema,eu,3
-4,4,unmy,andrei,15

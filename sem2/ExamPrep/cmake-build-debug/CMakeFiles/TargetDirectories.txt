@@ -1,5 +1,0 @@
-C:/Users/Razvan/Desktop/facultate/oop/examen pentru/cmake-build-debug/CMakeFiles/examen_pentru.dir
-C:/Users/Razvan/Desktop/facultate/oop/examen pentru/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Razvan/Desktop/facultate/oop/examen pentru/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Razvan/Desktop/facultate/oop/examen pentru/cmake-build-debug/CMakeFiles/examen_pentru_autogen_timestamp_deps.dir
-C:/Users/Razvan/Desktop/facultate/oop/examen pentru/cmake-build-debug/CMakeFiles/examen_pentru_autogen.dir
