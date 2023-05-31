@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Update Book</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+    <h1 id="Title" >Update Book</h1>
+    <hr class="style13">
+    <div class="formDIV">
+
+
+    <form (ngSubmit)="handleAdd()" #recipeForm="ngForm">
+      <label for="book_title">Book Title:</label>
+      <br>
+      <input type="text" name="book_title" [(ngModel)]="book.book_title" required>
+      <br>
+      <br>
+      <label for="Author">Author:</label>
+      <br>
+      <input type="text" name="Author" [(ngModel)]="book.book_author" required>
+      <br>
+      <br>
+      <label for="Type">Comment:</label>
+      <br>
+      <input type="text" name="Type" [(ngModel)]="book.book_comment">
+      <br>
+      <br>
+      <label for="Description">Date:</label>
+      <br>
+      <textarea name="Description"  [(ngModel)]="book.book_date" required></textarea>
+      <br>
+
+      <br>
+      <input type="submit" value="Update Book" class="myButton" onclick="return confirm('Are you sure you want to update this book?')">
+    </form>
+    </div>
+    <hr class="style13">
+   
+  </body>
+</html>

@@ -1,0 +1,68 @@
+.navbar {
+    align-items: center;
+    padding: 10px;
+    display: inline;
+    font-size: 20px;
+  }
+  
+  
+  #Title {
+    color: #2a3cc3;
+    font-family: 'Droid serif', serif;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 44px;
+    margin: 0 0 12px;
+    text-align: center;
+  }
+  label {
+    color: #2a3cc3;
+    text-decoration: none;
+  }
+  
+  .myButton {
+    background: linear-gradient(to bottom, #2a3cc3 5%, #14228b 100%);
+    background-color: #2a3cc3;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+    color: #2a3cc3;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffffff;
+  }
+  
+  .myButton:hover {
+    background: linear-gradient(to bottom, #3c73aa 5%, #1d5ea7 100%);
+    background-color: #2a3cc3;
+  }
+  
+  .myButton:active {
+    position: relative;
+    top: 1px;
+  }
+  
+  hr.style13 {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  }
+  
+  table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    border: 1px solid #2a3cc3;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #939fc5;
+  }

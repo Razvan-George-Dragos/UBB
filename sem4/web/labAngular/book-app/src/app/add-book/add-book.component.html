@@ -1,0 +1,27 @@
+<h1 id="Title">Add Book</h1>
+<hr class="style13">
+<form  #recipeForm="ngForm">
+  <label for="book_author">Author:</label>
+  <br>
+  <input type="text" name="book_author" [(ngModel)]="book.book_author" required>
+  <br>
+  <br>
+  <label for="book_title">Title:</label>
+  <br>
+  <input type="text" name="book_title" [(ngModel)]="book.book_title" required>
+  <br>
+  <br>
+  <label for="book_comment">Comment:</label>
+  <br>
+  <input type="text" name="book_comment" [(ngModel)]="book.book_comment" required>
+  <br>
+  <br>
+  <label for="book_date">Date:</label>
+  <br>
+  <textarea name="book_date" [(ngModel)]="book.book_date" required></textarea>
+  <br>
+  <br>
+  <br>
+  <button type="submit" class="myButton" (click)="handleAdd()">Add Book</button>
+</form>
+<hr>

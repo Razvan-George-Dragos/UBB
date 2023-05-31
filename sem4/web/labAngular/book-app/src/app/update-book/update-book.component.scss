@@ -1,0 +1,54 @@
+.formDIV{
+    align-items: center;
+  }
+  .navbar{
+    align-items: center;
+    padding: 10px;
+    display: inline;
+    font-size: 20px;
+  }
+  
+  #Title{
+    color: #3461ba;
+    font-family: 'Droid serif', serif;
+     font-size: 36px;
+      font-weight: 400;
+      font-style: italic;
+       line-height: 44px;
+       margin: 0 0 12px;
+        text-align: center;
+  }
+  label{color: #26659c;
+    text-decoration: none;
+    }
+  .myButton {
+  
+          background:linear-gradient(to bottom, #6f87ab 5%, #144da1 100%);
+          background-color:#a2afbe;
+          border-radius:15px;
+  
+          display:inline-block;
+          cursor:pointer;
+          color:#20314c;
+          font-family:Arial;
+          font-size:14px;
+          font-weight:bold;
+          padding:12px 16px;
+          text-decoration:none;
+          text-shadow:0 1px 0 #ffffff;
+      }
+  .myButton:hover {
+          background:linear-gradient(to bottom, #6f87ab 5%, #144da1 100%);
+          background-color:#a2afbe;
+      }
+  .myButton:active {
+          position:relative;
+          top:1px;
+      }
+  
+  
+    .style13 {
+            height: 10px;
+            border: 0;
+            box-shadow: 0 10px 10px -10px #5b7282 inset;
+        }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Delete Book</title>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1 id="Title">Delete Book</h1>
+    <hr class="style13">
+    <form   #recipeForm="ngForm">
+      <label for="book_title">Book Title:</label>
+      <br>
+      <input type="text" name="book_title"  [(ngModel)]="book_title" required>
+      <br>
+      <br>
+
+      <input type="submit" value="Delete Book" class="myButton" onclick="return confirm('Are you sure you want to delete this book?')" (click)="handleDelete()">
+
+    </form>
+    <hr class="style13">
+   
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Book Search</title>
+</head>
+
+<body>
+
+  <h1 id="Title">Browse Book</h1>
+
+  <hr class="style13">
+  <form id="search-form">
+    <label for="book">Title:</label>
+    <br>
+    
+    <input type="text" id="book_title" name="book_title" [(ngModel)]="titleFilter">
+    <br>
+    
+    <label for="book">Author:</label>
+    <br>
+    <input type="text" id="book_author" name="book_author" [(ngModel)]="authorFilter">
+    <br>
+    <br>
+    <input type="submit" value="Search" class="myButton" (click)="handleBrowse()">
+  </form>
+  <br>
+  <table>
+    <tr>
+      <th>Author</th>
+      <th>Title</th>
+      <th>Comment</th>
+      <th>Date</th>
+    </tr>
+    <tr *ngFor="let book of books">
+      <td>{{ book.book_author }}</td>
+      <td>{{ book.book_title }}</td>
+      <td>{{ book.book_comment }}</td>
+      <td>{{ book.book_date }}</td>
+    </tr>
+  </table>
+</body>
+</html>

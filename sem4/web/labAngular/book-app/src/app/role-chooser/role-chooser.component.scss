@@ -1,0 +1,48 @@
+.navbar, .navbar * {
+    align-items: center;
+    padding: 10px;
+    display: inline;
+    font-size: 20px;
+    font-family: 'Droid serif', serif;
+    color: #1a1fbe;
+    text-decoration: none;
+  }
+  
+  li a {
+    padding: 12px 16px;
+    color: #215aa9;
+    font-weight: bold;
+    
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #5781da; 
+  }
+  
+  .active {
+    background-color: #4862b7;
+  }
+  
+  .myButton {
+    background: linear-gradient(to bottom, #4862b7 5%, #4862b7 100%);
+    background-color: #eae0c2;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 12px 16px;
+  }
+  
+  .myButton:hover {
+    background: linear-gradient(to bottom, #5781da 5%, #4862b7 100%);
+    background-color: #4862b7;
+  }
+  
+  .myButton:active {
+    position: relative;
+    top: 1px;
+  }
+  
+  hr.style13 {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #3d5572 inset;
+  }
