@@ -1,0 +1,14 @@
+intero principale ( ) {
+    intero x;
+    leggere(x);
+    intero n = 2;
+    finoAQuando(n * n > x){
+        qualora(x % n == 0){
+            scrivere(0)
+            return 0;
+        }
+        n = n + 1;
+    }
+    scrivere(1);
+    return 0;
+}

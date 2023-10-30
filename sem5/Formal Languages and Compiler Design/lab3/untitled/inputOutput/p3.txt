@@ -1,0 +1,14 @@
+intero principale ( ) {
+    intero a , b;
+    leggere(a);
+    leggere(b);
+    finoAQuando(a == b){
+        qualora(a > b){
+            b = a - b;
+        }
+        qualoraFalso{
+            a = b - a;
+        }
+    }
+    scrivere(a);
+}
