@@ -1,0 +1,29 @@
+Upper (A-Z) and lower case letters (a-z) of the English alphabet
+Decimal digits (0-9)
+
+- operators + - * / == != < <= = >= %
+- separators [ ] { } ( )  : ; space ' ' '\n' '\t'
+- reserved words: intero, float, bool, const, char, leggere, scrivere, qualora, qualoraFalso, qualoraFalsoPero, finoAQuando, and, or, not
+
+- identifiers
+identifier ::= letter | letter{letter}{digit}
+letter ::= "A" | "B" | . ..| "Z"| "a" | "b" | ... | "z"
+digit ::= "0" | "1" |...| "9"
+
+1.intero - rule:
+
+      noconst:="+"no|"-"no|no
+
+      no:=digit{no}
+
+2.character
+
+    character:=' letter '|' digit '
+
+3.string
+
+      constchar:=" string "
+
+      string:=char{string}
+
+      char:=letter|digit
