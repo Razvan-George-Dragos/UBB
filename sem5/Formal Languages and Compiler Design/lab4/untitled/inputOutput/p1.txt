@@ -1,0 +1,15 @@
+intero principale ( ) {
+    intero a, b;
+    leggere(a);
+    leggere(b);
+    qualora(a > b){
+        scrivere(a - b);
+    }
+    qualoraFalso{
+        scrivere(b - a);
+    }
+    qualoraFalsoPero(a == b) {
+        scrivere(0);
+    }
+    return 0;
+}

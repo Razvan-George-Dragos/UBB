@@ -1,0 +1,35 @@
+program ::= "intero principale()"
+
+declaration ::= type IDENTIFIER ";"
+
+type1 ::= "bool" | "char" | "intero" | "float" | "string"
+
+arraydecl ::= "type1" "[" nr "]"
+
+type  ::= type1|arraydecl
+
+stmtlist ::= stmt | stmt ";" stmtlist
+
+stmt ::= simplstmt | structstmt
+
+simplstmt ::= assignstmt | iostmt
+
+assignstmt ::= IDENTIFIER "=" expression
+
+expression ::= expression "+" term | term
+
+term ::= term "*" factor | factor
+
+factor ::= "(" expression ")" | IDENTIFIER
+
+iostmt ::= "leggere" | "scrivere" "(" IDENTIFIER ")"
+
+structstmt ::= cmpdstmt | ifstmt | whilestmt
+
+ifstmt ::= "qualora" condition "{" stmt "}" ["qualoraFalso" stmt]
+
+whilestmt ::= "finoAQuando" condition "{" stmt "}"
+
+condition ::= expression RELATION expression
+
+RELATION ::= "<" | "<=" | "==" | "!=" | ">=" | ">"
