@@ -1,0 +1,19 @@
+Program {
+ int $num
+ bool $prime -> true
+ 
+ scan($num)
+ 
+ for(int $i -> 2, $i =< $num - 1, $i -> $i + 1) [
+  if($num % $i = 0) [
+   $prime -> false
+   break
+  ]
+ ]
+ 
+ if($prime = true) [
+  print("number is prime")
+ ] else [
+  print("number is not prime")
+ ]
+}
